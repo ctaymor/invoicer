@@ -17,7 +17,7 @@ defmodule Invoicer do
   end
 
   def getHTMLInvoice do
-    "fake invoice"
+    "<title>Invoice</title>"
   end
 
 end

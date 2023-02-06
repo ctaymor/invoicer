@@ -1,5 +1,6 @@
 defmodule InvoicerTest do
   use ExUnit.Case
+  use AssertHTML
   doctest Invoicer
 
   test "greets the world" do
@@ -7,6 +8,6 @@ defmodule InvoicerTest do
   end
 
   test "make an HTML Invoice" do
-    assert Invoicer.getHTMLInvoice() == "fake invoice"
+    assert_html Invoicer.getHTMLInvoice(), "title", "Invoice"
   end
 end
