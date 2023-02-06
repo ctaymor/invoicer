@@ -15,4 +15,9 @@ defmodule Invoicer do
   def hello do
     :world
   end
+
+  def getHTMLInvoice do
+    "fake invoice"
+  end
+
 end

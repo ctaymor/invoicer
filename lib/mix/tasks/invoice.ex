@@ -3,6 +3,6 @@ defmodule Mix.Tasks.Invoice do
   use Mix.Task
 
   def run(_) do
-    IO.puts("pretend making an invoice")
+    IO.puts(Invoicer.getHTMLInvoice())
   end
 end
