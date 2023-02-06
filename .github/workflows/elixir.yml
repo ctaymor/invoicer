@@ -25,7 +25,7 @@ jobs:
       env:
         # See:
         # https://github.com/erlef/setup-beam/blob/master/src/setup-beam.js#L340
-        ImageOS: ubuntu22
+        ImageOS: ubuntu20
     - name: Restore dependencies cache
       uses: actions/cache@v3
       with:
